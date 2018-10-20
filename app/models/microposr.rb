@@ -1,5 +1,5 @@
-class Microposr < ApplicationRecord
-	belongs_to :user
-	validates :concent, length: { maximum: 140 },
-		presense: true
+class Micropost < ApplicationRecord
+  belongs_to :user
+  validates :content, length: { maximum: 140 },
+                      presence: true
 end
